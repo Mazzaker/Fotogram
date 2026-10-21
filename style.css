@@ -8,6 +8,7 @@
     --hoverbordercolor: #6BC1E1;
     --headerbackground: #09212A;
     --bodybackground: #06171E;
+    --dialogbackground: #09212A; 
 }
 
 @font-face {
@@ -90,7 +91,57 @@ header > h2{
     cursor: pointer;
 }
 
+.dialogfeld{
+    background: var(--dialogbackground);
+    border: 0px solid #ffffff;
+    border-radius: 40px;
+    color: #FFFFFF;
+    padding: 56px 64px;
 
+    
+}
+
+.dialogHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dialogHeader > p{
+    font-family: "figtree";
+    font-weight: bold;
+}
+
+.closeDialog{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.bildDialog{
+    width: 560px;
+    height: 375px;
+}
+
+.dialogFooter{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+}
+
+.bildVor{
+    width: 60px;
+    height: 60px;
+    rotate: 180deg;
+}
+
+.bildZurück{
+    width: 60px;
+    height: 60px;
+}
 
 
 

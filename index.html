@@ -19,14 +19,16 @@
         <div class="bildWrapper">
             <img src="./assets/bilder/bild1.jpg" alt="bild1" onclick="openDialog()">
             <img src="./assets/bilder/bild2.jpg" alt="bild2">
-            <dialog id="dialogfeld">
-                <div>
+            <dialog id="dialogfeld" class="dialogfeld">
+                <div class="dialogHeader">
                     <p>bild1</p>
-                    <img src="./assets/icons/close.png" alt="close" onclick="closeDialog()">
+                    <img src="./assets/icons/close.png" alt="close" onclick="closeDialog()" class="closeDialog">
                 </div>
-                <img src="./assets/bilder/bild1.jpg" alt="Bild1">
-                <div>
-                    
+                <img src="./assets/bilder/bild1.jpg" alt="Bild1" class="bildDialog">
+                <div class="dialogFooter">
+                    <img src="./assets/icons/pfeil.png" alt="weiter" class="bildVor">
+                    <p>x/13</p>
+                    <img src="./assets/icons/pfeil.png" alt="weiter" class="bildZurück">
                 </div>
             </dialog>
         </div>
