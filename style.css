@@ -34,11 +34,12 @@ header{
     width: 100%;
     height: 80px;
     padding-inline: max(140px, calc(50% - 720px));
-    
+    margin: 0px;
     
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 10px;
 }
 header > img{
@@ -136,11 +137,14 @@ header > h2{
     width: 60px;
     height: 60px;
     rotate: 180deg;
+    cursor: pointer;
 }
 
 .bildZurück{
     width: 60px;
     height: 60px;
+    cursor: pointer;
+
 }
 
 
