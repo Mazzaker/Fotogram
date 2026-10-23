@@ -247,7 +247,7 @@ footer > p{
         height: 38px;
     }
     header > h2{
-        font-size: 25px;
+        font-size: 20px;
     }
     footer{
     padding-inline: max(20px, calc(50% - 720px));
