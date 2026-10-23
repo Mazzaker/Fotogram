@@ -55,7 +55,7 @@ header > h2{
     background: var(--bodybackground);
     width: 100%;
     padding-inline: max(140px, calc(50% - 720px));
-    height: 80dvh;
+    height: 100dvh;
 
     display: flex;
     flex-direction: column;
