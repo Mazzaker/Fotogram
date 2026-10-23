@@ -6,18 +6,19 @@ let arrayImg = [
     "assets/bilder/bild4.jpg",
     "assets/bilder/bild5.jpg",
     "assets/bilder/bild6.jpg",
-    "assets/bilder/bild7.jpg",
+    "assets/bilder/bild7.png",
     "assets/bilder/bild8.jpg",
     "assets/bilder/bild9.jpg",
     "assets/bilder/bild10.jpg",
     "assets/bilder/bild11.jpg",
-    "assets/bilder/bild12.jpg",
 ]
 const dialogfeld = document.getElementById("dialogfeld")
 const bildWrapper = document.getElementById("bildWrapper")
 
 function openDialog(i){
-    renderDialog(i)
+    if(i>=0 && i<arrayImg.length){
+        renderDialog(i)
+    }
     dialogfeld.showModal();
 }
 
