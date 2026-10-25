@@ -15,10 +15,19 @@ let arrayImg = [
 const dialogfeld = document.getElementById("dialogfeld")
 const bildWrapper = document.getElementById("bildWrapper")
 
+function init(){
+    renderImg()
+}
+
 function openDialog(i){
-    if(i>=0 && i<arrayImg.length){
-        renderDialog(i)
+    if (i < 0) {
+    i = arrayImg.length - 1;
     }
+
+    if (i >= arrayImg.length) {
+        i = 0;
+    }
+    renderDialog(i)
     dialogfeld.showModal();
 }
 
@@ -30,8 +39,10 @@ function renderImg(){
     
     for(let i = 0; i < arrayImg.length; i++){
         bildWrapper.innerHTML += `
-                <img src="${arrayImg[i]}" alt="bild${i}" onclick="openDialog(${i})">
-            `
+            <button id="bildButton" onclick="openDialog(${i})">
+                <img src="${arrayImg[i]}" alt="bild${i}">
+            </button>
+        `
     }
     
 }
@@ -51,7 +62,3 @@ function renderDialog(i){
         `
 }
 
-
-function init(){
-    renderImg()
-}

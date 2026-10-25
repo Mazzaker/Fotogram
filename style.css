@@ -50,7 +50,6 @@ header > h2{
     font-size: 30px;
 }
 
-
 .content{
     background: var(--bodybackground);
     width: 100%;
@@ -77,15 +76,28 @@ header > h2{
     align-items: center;
     gap: 16px;
 }
-.bildWrapper > img{
+.bildWrapper > button{      
+    all: unset;
+    width: 150px;
+    height: 150px;
+    cursor: pointer; 
+    display: block;
+    border-radius: 16px;    
+}
+.bildWrapper > button:focus-visible {
+    border: 2px solid var(--hoverbordercolor);
+}
+.bildWrapper > button > img{
     width: 150px;
     height: 150px;
     border: 2px solid var(--bordercolor);
     border-radius: 16px;
-    
+    object-fit: cover;
+    object-position: center;
+    box-sizing: border-box;
     /* transition: all 250ms ease-in-out; */
 }
-.bildWrapper > img:hover{
+.bildWrapper > button > img:hover{
     /* transform: scale(1.1); */
     border: 2px solid var(--hoverbordercolor);
     cursor: pointer;
