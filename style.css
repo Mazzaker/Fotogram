@@ -87,7 +87,7 @@ header > h2{
     border-radius: 16px;    
 }
 .bildWrapper > button:focus-visible {
-    border: 2px solid var(--hoverbordercolor);
+    outline : 2px solid var(--hoverbordercolor);
 }
 .bildWrapper > button > img{
     width: 150px;
