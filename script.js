@@ -50,15 +50,21 @@ function renderImg(){
 function renderDialog(i){
         dialogfeld.innerHTML = `
             <div class="dialogHeader">
-                    <p>bild${i+1}</p>
+                <p>bild${i+1}</p>
+                <button>
                     <img src="./assets/icons/close.png" alt="close" onclick="closeDialog()" class="closeDialog">
-                </div>
-                <img src="${arrayImg[i]}" alt="bild${i+1}" class="bildDialog">
-                <div class="dialogFooter">
+                </button>
+            </div>
+            <img src="${arrayImg[i]}" alt="bild${i+1}" class="bildDialog">
+            <div class="dialogFooter">
+                <button>    
                     <img src="./assets/icons/pfeil.png" alt="weiter" onclick="openDialog(${i-1})" class="bildVor">
-                    <p>${i+1}/${arrayImg.length}</p>
+                </button>
+                <p>${i+1}/${arrayImg.length}</p>
+                <button>  
                     <img src="./assets/icons/pfeil.png" alt="weiter" onclick="openDialog(${i+1})" class="bildZurück">
-                </div>
+                </button>
+            </div>
         `
 }
 

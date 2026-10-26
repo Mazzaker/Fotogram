@@ -125,17 +125,31 @@ dialog{
     justify-content: space-between;
     padding-bottom: 48px;
 }
-
 .dialogHeader > p{
     font-family: "figtree";
     font-weight: bold;
     font-size: 24px;
+}
+.dialogHeader > button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background: var(--bodybackground);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dialogHeader > button:hover{
+    background: var(--bordercolor);
 }
 
 .closeDialog{
     width: 30px;
     height: 30px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .bildDialog{
@@ -156,18 +170,33 @@ dialog{
     width: 10%;
     text-align: center;
 }
+.dialogFooter > button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background: none;
+    display: block;
+}
+.dialogFooter > button:hover{
+    background: var(--bordercolor);
+}
 
 .bildVor{
     width: 60px;
     height: 60px;
     rotate: 180deg;
     cursor: pointer;
+    box-sizing: border-box;
+    margin-left: -10%;
 }
 
 .bildZurück{
     width: 60px;
     height: 60px;
     cursor: pointer;
+    box-sizing: border-box;
+    margin-left: -10%;
 }
 
 footer{
